@@ -1,5 +1,23 @@
-h1 {
-  background-color: aquamarine;
+body {
+  margin: 0;
+  background-color: rgb(27, 163, 57);
+  color: rgba(0, 0, 0, 0.897);
+}
+
+.bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+main {
+  position: fixed;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
