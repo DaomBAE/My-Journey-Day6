@@ -37,4 +37,13 @@ main {
         background-color: rgb(87, 240, 189);
         
     }
+
+    .quotes {
+        .quotesAddbtn {
+            display: none;
+
+            position: absolute;
+            top: 50%
+        }
+    }
 }

@@ -2,7 +2,6 @@ body {
   margin: 0;
   background-color: rgb(27, 163, 57);
   color: rgba(0, 0, 0, 0.897);
-  font-size: 100px;
 }
 
 .bgVideo {
@@ -23,6 +22,23 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+main .time {
+  opacity: 0.98;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px #006342;
+  padding: 12px 12px;
+  border: 8px solid black;
+  border-radius: 30px;
+  box-shadow: 1px 1px 8px;
+  background-color: rgb(87, 240, 189);
+}
+main .quotes .quotesAddbtn {
+  display: none;
+  position: absolute;
+  top: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
