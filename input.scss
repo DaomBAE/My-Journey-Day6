@@ -39,11 +39,27 @@ main {
     }
 
     .quotes {
-        .quotesAddbtn {
-            display: none;
+        position: relative;
+        font-size:60 px;
+        margin: 10px;
 
+        .quotesAddBtn {
+            display: none;
             position: absolute;
-            top: 50%
+            top: 50%;
+            right: 50%;
+            transform: translate(50%,-50%);
         }
+
+          &:hover {
+            .quotesAddBtn {
+              display: inline-block;
+
+            }
+        }
+    }
+
+    .newQuotes {
+        display: none;
     }
 }

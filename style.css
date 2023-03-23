@@ -35,10 +35,23 @@ main .time {
   box-shadow: 1px 1px 8px;
   background-color: rgb(87, 240, 189);
 }
-main .quotes .quotesAddbtn {
+main .quotes {
+  position: relative;
+  font-size: 60 px;
+  margin: 10px;
+}
+main .quotes .quotesAddBtn {
   display: none;
   position: absolute;
   top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+main .newQuotes {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
