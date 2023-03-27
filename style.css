@@ -67,6 +67,7 @@ main .search .searchLogo {
 }
 main .searchResult {
   display: none;
+  background-color: azure;
 }
 main .nft {
   position: fixed;
