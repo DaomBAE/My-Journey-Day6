@@ -1,3 +1,11 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 body {
   margin: 0;
   background-color: rgb(27, 163, 57);
@@ -35,10 +43,30 @@ main .time {
   box-shadow: 1px 1px 8px;
   background-color: rgb(87, 240, 189);
 }
-main .quotes .quotesAddbtn {
+main .quotes {
+  position: relative;
+  font-size: 60px;
+}
+main .quotes .quotesAddBtn {
   display: none;
   position: absolute;
   top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+main .quotes:hover .quotesAddBtn {
+  display: inline-block;
+}
+main .newQuotes {
+  display: none;
+}
+main .search .searchLogo {
+  width: 32px;
+  height: 32px;
+  animation: spin 20s linear infinite;
+}
+main .searchResult {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

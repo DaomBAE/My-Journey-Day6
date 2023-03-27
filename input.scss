@@ -1,3 +1,12 @@
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
 body {
     margin: 0;
     background-color: rgb(27, 163, 57);
@@ -39,11 +48,37 @@ main {
     }
 
     .quotes {
-        .quotesAddbtn {
-            display: none;
-
-            position: absolute;
-            top: 50%
+        position: relative;
+        font-size: 60px;
+    
+        .quotesAddBtn {
+          display: none;
+          position: absolute;
+          top: 50%;
+          right: 50%;
+          transform: translate(50%, -50%);
         }
+    
+        &:hover {
+          .quotesAddBtn {
+            display: inline-block;
+          }
+        }
+      }
+    
+      .newQuotes {
+        display: none;
+      }
+    
+      .search {
+        .searchLogo {
+          width: 32px;
+          height: 32px;
+    
+          animation: spin 20s linear infinite;
+        }
+      }
+      .searchResult{
+        display: none;
+      }
     }
-}
