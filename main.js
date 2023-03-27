@@ -81,14 +81,19 @@ function onClickRegist() {
   //   question,
   // };
 
+  let isLoading = false;
+
 async function onClickSearch() {
   const searchInput = document.querySelector(".searchInput");
   const searchResult = document.querySelector(".searchResult");
 
   if (!searchInput.value) return;
+  if (isLoading) return;
   
-  const question = searchInput.value;
+  // 여기까지 왔다는것은 === isLoading false
 
+  isLoading = true;
+  const question = searchInput.value;
   searchInput.value = "검색 중 입니다... 잠시만 기다려주세요.";
 
   //  프론트에서 백앤드로 보내는 코드
@@ -111,4 +116,5 @@ async function onClickSearch() {
   }
 
   searchInput.value = "";
+  isLoading = false;
 }
